@@ -10,8 +10,10 @@ date >> log.txt
 echo 'Install rbenv' >> log.txt
 apt-get -y install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 #source ~/.bashrc
+echo "rbenv finished." >> log.txt
+date >> log.txt
 
 echo 'Install ruby-build' >> log.txt
 date >> log.txt
