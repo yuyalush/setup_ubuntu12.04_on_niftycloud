@@ -7,32 +7,17 @@ apt-get -y install git build-essential zlib1g-dev libssl-dev libreadline-dev lib
 echo "apt-get finished." >> log.txt
 date >> log.txt
 
-echo 'Install rbenv' >> log.txt
-apt-get -y install rbenv
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-#eval "$(rbenv init -)"
-#source ~/.bashrc
-echo "rbenv finished." >> log.txt
+#ruby1.9.2
+echo "Ruby start." >> log.txt
 date >> log.txt
-
-echo 'Install ruby-build' >> log.txt
+wget ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p320.tar.gz
+tar zxvf ruby-1.9.2-p320.tar.gz
+cd ruby-1.9.2-p320
+./configure
+make -j
+make install
+echo "Ruby finished." >> log.txt
 date >> log.txt
-git clone git://github.com/sstephenson/ruby-build.git
-cd ruby-build
-./install.sh
-cd ..
-echo "ruby-build finished." >> log.txt
-date >> log.txt
-
-echo 'Install Ruby1.9.2-p320' >> log.txt
-date >> log.txt
-rbenv install 1.9.2-p320
-rbenv rehash
-rbenv global 1.9.2-p320
-echo 'gem: --no-ri --no-rdoc' >> ~/.gemrc
-echo 'Ruby1.9.2-p320 finished' >> log.txt
-date >> log.txt
-
 
 echo 'Install Rails' >> log.txt
 date >> log.txt
