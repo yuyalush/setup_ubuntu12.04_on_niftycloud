@@ -16,6 +16,7 @@ cd ruby-1.9.2-p320
 ./configure
 make -j
 make install
+cd ..
 echo "Ruby finished." >> log.txt
 date >> log.txt
 
