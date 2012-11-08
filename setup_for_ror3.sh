@@ -21,6 +21,7 @@ date >> log.txt
 
 echo 'Install Rails' >> log.txt
 date >> log.txt
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem update --system
 gem update rake
 gem install rails -v=3.2.8
