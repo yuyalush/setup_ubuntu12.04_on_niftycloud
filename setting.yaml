@@ -1,0 +1,32 @@
+niftycloud:
+  access_key: AAAAAAA 
+  secret_key: BBBBBBBB 
+
+dozens:
+  api_key: VVVVVVV
+  dznsid: comeeting
+
+options_for_run_instances:
+  key_name: SSHkeyName
+  security_group: FireWallName
+  monitoring_enabled: true
+  disable_api_termination: false
+  accounting_type: 2
+  admin: admin
+  password: password
+  ip_type: dynamic # or static
+
+ssh:
+  user: root
+  sh_url: https://raw.github.com/yuyalush/setup_ubuntu12.04_on_niftycloud/master/setup_for_ror3.sh
+  key_file_path:
+    east-1: ~/nifnif_east-1_private.pem
+    west-1: ~/nifnif_west-1_private.pem 
+  passphrase: SSHkeyPassphrase
+
+options_for_create_record:
+  domain: yourdns.com
+  type: A
+  prio:
+  ttl: 7200
+
