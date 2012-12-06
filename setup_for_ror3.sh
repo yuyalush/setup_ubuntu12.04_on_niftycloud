@@ -52,7 +52,7 @@ rails -v >> log.txt
 # Test Rails App
 rails new testapp --skip-bundle
 cd testapp
-echo "gem 'therubyracer'" >> Gemfile
+# echo "gem 'therubyracer'" >> Gemfile
 echo "gem 'unicorn'" >> Gemfile
 echo "gem 'nifty-generators'" >> Gemfile
 echo "gem 'mocha'" >> Gemfile
