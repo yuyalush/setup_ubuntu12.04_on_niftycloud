@@ -26,7 +26,6 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem update --system
 gem update rake
 gem install rails -v=3.0.9
-rbenv rehash
 echo "Rails finished." >> log.txt
 date >> log.txt
 
