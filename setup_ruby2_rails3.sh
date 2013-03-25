@@ -26,7 +26,7 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem i bundle
 bundle init
 echo 'gem "rails"' >> Gemfile
-bundle install rails
+bundle install
 echo "Rails finished." >> log.txt
 date >> log.txt
 
