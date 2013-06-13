@@ -57,7 +57,7 @@ echo "gem 'unicorn'">> Gemfile
 bundle install
 rails g scaffold Book title:string price:integer
 rake db:migrate
-bundle exec unicorn_rails -D
+bundle exec unicorn_rails -D -p 80
 ufw allow 80
 
 echo "Finish!!!!!" >> ../log.txt
