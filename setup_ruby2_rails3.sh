@@ -58,7 +58,7 @@ bundle install
 rails g scaffold Book title:string price:integer
 rake db:migrate
 bundle exec unicorn_rails -D
-ufw allow 8080
+ufw allow 80
 
 echo "Finish!!!!!" >> ../log.txt
 date >> ../log.txt
