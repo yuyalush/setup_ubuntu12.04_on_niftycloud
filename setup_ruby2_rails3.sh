@@ -11,10 +11,10 @@ date >> log.txt
 echo "Ruby start." >> log.txt
 date >> log.txt
 wget ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p0.tar.gz
-tar zxvf ruby-2.0.0-p0.tar.gz
+tar zxf ruby-2.0.0-p0.tar.gz
 cd ruby-2.0.0-p0
-./configure
-make -j
+./configure --disable-install-rdoc
+make -j5
 make install
 cd ..
 echo "Ruby finished." >> log.txt
